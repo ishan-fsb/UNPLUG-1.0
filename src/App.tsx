@@ -312,7 +312,7 @@ export default function App() {
 
   const [challengeDay, setChallengeDay] = useState(() => load("challengeDay", 1));
   const [challengeDone, setChallengeDone] = useState<string[]>(() => load("challengeDone", []));
-  const [islandLevel, setIslandLevel] = useState(() => load("islandLevel", 1));
+  const [islandLevel] = useState(1);
 
   useEffect(() => {
     const data: Record<string, unknown> = {
